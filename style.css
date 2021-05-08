@@ -1,0 +1,320 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Manrope', sans-serif;
+    background-color: hsl(210, 46%, 95%);
+}
+.container{
+    position: absolute;
+    width: 55%;
+    height: 45vh;
+    transform: translate(-50%, -50%);
+    top: 45%;
+    left: 50%;
+    display: flex;
+}
+.left{
+    width: 35%;
+    height: 100%;
+    background-image: url("./images/drawers.jpg");
+    background-size:cover;
+    border-radius: 10px 0 0 10px;
+}
+.right{
+    width: 65%;
+    background-color: white;
+    padding: 2.2rem 3.5rem 2.5rem 2.5rem;
+    border-radius: 0 10px 10px 0;
+}
+.right h2{
+    font-size: 1.6rem;
+    color:hsl(217, 19%, 35%);
+    margin-bottom: 4%;
+}
+.right p{
+    color: hsl(217, 19%, 35%);
+    margin-bottom: 5%;
+}
+.name-data{
+    display: flex;
+    justify-content: space-between;
+}
+.name-img{
+    display: flex;
+    justify-content: space-between;
+}
+.name-img img{
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+}
+.name-date{
+    margin-top: 2%;
+    margin-left: 9%;
+    width: 200px;
+    display: block;
+    line-height: 0.8;
+}
+.name-date p{
+    font-weight: 700;
+}
+.name-date span{
+    color: hsl(214, 17%, 51%);
+}
+
+
+.icon{
+    background-color: hsl(210, 46%, 95%);
+    color:hsl(217, 19%, 35%);
+    font-size: 1.1rem;
+    padding: 0.8rem;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    height: 100%;
+}
+
+.active-icon{
+    background-color: hsl(217, 19%, 35%);
+    color:hsl(210, 46%, 95%);
+}
+.share-no{
+    display: none;
+    
+}
+
+.share{
+    display: block;
+    width: 280px;
+    position: absolute;
+    color: white;
+    font-size: 1.5rem;
+    right: -60px;
+    top:48%;
+}
+.share-data{
+    background-color: hsl(217, 19%, 35%);
+    border-radius: 10px;
+    padding: 0.8rem 2.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+.share p{
+    margin-top: 5px;
+    color: hsl(214, 17%, 51%);
+    font-size: 1rem;
+    letter-spacing: 5px;
+}
+
+.share .triangle{
+    width: 20px;
+    height: 20px;
+    background-color: hsl(217, 19%, 35%);
+    position: relative;
+    transform: rotateY(0deg) rotate(45deg);
+    margin-left: 47%;
+    margin-top: -3.7%;
+}
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+    position: absolute;
+    transform: translate(-50%, -50%);
+    bottom: 0.5%;
+    left: 50%;
+}
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+
+
+
+
+@media only screen and (max-width:1440px){
+    .right{
+        padding: 2rem;
+    }
+    .right h2{
+        font-size: 140%;
+        color:hsl(217, 19%, 35%);
+        margin-bottom: 4%;
+    }
+    .right p{
+        color: hsl(217, 19%, 35%);
+        margin-bottom: 5%;
+    }
+}
+
+@media only screen and (max-width: 1163px){
+    .container{
+        position: absolute;
+        width: 78%;
+        height: 45vh;
+        transform: translate(-50%, -50%);
+        top: 45%;
+        left: 50%;
+        display: flex;
+    }
+    .left{
+        width: 35%;
+        height: 100%;
+        background-image: url("./images/drawers.jpg");
+        background-size:cover;
+        border-radius: 10px 0 0 10px;
+    }
+    .right{
+        width: 65%;
+        background-color: white;
+        padding: 2rem;
+        border-radius: 0 10px 10px 0;
+    }
+    .right h2{
+        font-size: 150%;
+        color:hsl(217, 19%, 35%);
+        margin-bottom: 4%;
+    }
+    .right p{
+        color: hsl(217, 19%, 35%);
+        margin-bottom: 5%;
+    }
+}
+
+
+@media only screen and (max-width:440px) {
+    .container{
+        margin: 2rem;
+        position: relative;
+        width: 85%;
+        height: 100%;
+        transform: translate(0, 0);
+        top: 0;
+        left: 0;
+        display: flex;
+        flex-direction: column;
+    }
+    .left{
+        width: 100%;
+        height: 250px;
+        background-image: url("./images/drawers.jpg");
+        background-size:cover;
+        border-radius: 10px 10px 0 0;
+    }
+    .right{
+        width: 100%;
+        background-color: white;
+        padding: 2rem;
+        padding-bottom: 1rem;
+        border-radius: 0 0 10px 10px;
+    }
+    .right h2{
+        font-size: 1.2rem;
+        color:hsl(217, 19%, 35%);
+        margin-bottom: 4%;
+    }
+    .right p{
+        color: hsl(217, 19%, 35%);
+        margin-bottom: 15%;
+    }
+    .name-data{
+        display: flex;
+        justify-content: space-between;
+    }
+    .name-img{
+        display: flex;
+        justify-content: space-between;
+    }
+    .name-img img{
+        width: 45px;
+        height: 45px;
+        border-radius: 50%;
+    }
+    .name-date{
+        margin-top: 6%;
+        margin-left: 4%;
+        width: 150px;
+        display: block;
+        line-height: 0;
+    }
+    .name-date p{
+        font-weight: 700;
+    }
+    .name-date span{
+        color: hsl(214, 17%, 51%);
+    }
+    
+    
+    .icon{
+        background-color: hsl(210, 46%, 95%);
+        color:hsl(217, 19%, 35%);
+        position: relative;
+        font-size: 1.1rem;
+        padding: 0.8rem;
+        border-radius: 50%;
+        cursor: pointer;
+        transition: all 0.2s ease-in-out;
+        height: 100%;
+        z-index: 10;
+    }
+    
+    .active-icon{
+        background-color: hsl(214, 17%, 51%);
+        color:hsl(210, 46%, 95%);
+    }
+    .share-no{
+        display: none;
+        
+    }
+    
+    .share{
+        display: inline;
+        width: 100%;
+        position: absolute;
+        color: white;
+        font-size: 2.2rem;
+        right: 0px;
+        top:87.5%;
+        z-index: 10;
+    }
+    .share-data{
+        background-color: hsl(217, 19%, 35%);
+        border-radius:0 0 10px 10px;
+        padding: 1.2rem;
+        padding-right: 6rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center; 
+    }
+    .p{
+        line-height: 0;
+        margin-top: 0;
+        color: hsl(214, 17%, 51%);
+        font-size: 1rem;
+        letter-spacing: 5px;
+        text-align: center;
+    }
+    
+    .share .triangle{
+        display: none;
+        /* width: 20px;
+        height: 20px;
+        background-color: hsl(217, 19%, 35%);
+        position: absolute;
+        transform: rotateY(0deg) rotate(45deg);
+        margin-left: 47%;
+        margin-top: -3.7%; */
+    }
+    .attribution { 
+        font-size: 11px; 
+        text-align: center; 
+        position: relative;
+    }
+    .attribution a { 
+        color: hsl(228, 45%, 44%); 
+    }
+    
+}
